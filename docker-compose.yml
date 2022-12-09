@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   gobalance:
-    image: flexstatmain/flexstatmain:gobalance
+    image: flexstatmain/gobalance:v2
     volumes:
      - ./tor:/etc/tor
      - ./configs:/var/lib/tor/configs
