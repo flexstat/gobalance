@@ -1,0 +1,3 @@
+SocksPort 0
+ControlPort 127.0.0.1:6666
+DataDirectory  /var/lib/tor/frontend_data

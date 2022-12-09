@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  gobalance:
+    image: flexstatmain/flexstatmain:gobalance
+    volumes:
+     - ./tor:/etc/tor
+     - ./configs:/var/lib/tor/configs
+     - ./frontend:/var/lib/tor/frontend_data
+    restart: always
+
+
