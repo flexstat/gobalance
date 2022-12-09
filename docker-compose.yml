@@ -7,6 +7,7 @@ services:
      - ./tor:/etc/tor
      - ./configs:/var/lib/tor/configs
      - ./frontend:/var/lib/tor/frontend_data
+     - ./supervisor:/etc/supervisor/
     restart: always
 
 
