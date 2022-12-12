@@ -8,6 +8,7 @@ services:
      - ./configs:/var/lib/tor/configs
      - ./frontend:/var/lib/tor/frontend_data
      - ./supervisor:/etc/supervisor/
+     - ./onionbalance:/go/gobalance/pkg/onionbalance
     restart: always
 
 
