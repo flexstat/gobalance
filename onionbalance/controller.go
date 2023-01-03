@@ -292,7 +292,7 @@ func (c *Controller) launchThreads() {
 				msg = strings.TrimPrefix(msg, "650+")
 			}
 			words := strings.Split(msg, " ")
-                        defer recoveryFunction()
+                        //defer recoveryFunction()
 			if words[0] == "HS_DESC" {
 				Onionbalance().handleNewDescEventWrapper(msg)
 			} else if words[0] == "HS_DESC_CONTENT" {
